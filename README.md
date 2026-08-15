@@ -23,3 +23,16 @@ Check your versions:
 ```bash
 node --version
 pnpm --version
+```
+## 🚀 Run the Game
+
+### 1. Install dependencies
+
+```bash
+pnpm install
+```
+### 2. Start the server
+
+```bash
+pnpm start
+```
