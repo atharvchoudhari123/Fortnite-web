@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no"
+    >
+
+    <title>Battle Island</title>
+
+    <link
+        rel="stylesheet"
+        href="./style.css"
+    >
+</head>
+
+<body>
+
+    <!-- =====================================================
+         GAME CANVAS
+         ===================================================== -->
+
+    <div id="game-container"></div>
+
+
+    <!-- =====================================================
+         START SCREEN
+         ===================================================== -->
+
+    <div id="start-screen">
+
+        <div class="start-background"></div>
+
+        <div class="start-content">
+
+            <div class="game-logo">
+                BATTLE
+                <span>ISLAND</span>
+            </div>
+
+            <div class="game-subtitle">
+                LAST PLAYER STANDING
+            </div>
+
+            <button id="start-button">
+                PLAY
+            </button>
+
+            <div class="start-hint">
+                CLICK PLAY TO DROP IN
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         LOADING
+         ===================================================== -->
+
+    <div id="loading-screen">
+
+        <div class="loading-title">
+            LOADING BATTLE ISLAND
+        </div>
+
+        <div class="loading-bar">
+
+            <div
+                id="loading-progress"
+            ></div>
+
+        </div>
+
+        <div id="loading-percent">
+            0%
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         GAME UI
+         ===================================================== -->
+
+    <div id="game-ui"></div>
+
+
+    <!-- =====================================================
+         GAME SCRIPT
+         ===================================================== -->
+
+    <script type="importmap">
+{
+    "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/"
+    }
+}
+</script>
+   
+    <script
+        type="module"
+        src="./js/main.js"
+    ></script>
+
+</body>
+</html>
